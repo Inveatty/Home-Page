@@ -1,0 +1,154 @@
+/* MATERIAL ICONS */
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+       url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+       url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/* SECCIONES  */
+
+#full{
+  top: 0!important;
+  z-index:-100;
+  background: url("../images/PEEE.png") no-repeat;
+  position: absolute;
+ 	width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+}
+
+#we_do{
+  border: 20px solid transparent 	!important;
+  top: 100%!important;
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+}
+
+/* MENSAJES DE RECLAMO */
+
+#reclamo > div > section{
+  margin-top: 100px !important;
+  position: absolute;
+
+  margin: 0 auto;
+}
+
+.frase{
+  text-align: center;
+
+  -webkit-animation: fade-in-out 15s infinite;
+    -moz-animation: fade-in-out 15s infinite;
+    -o-animation:   fade-in-out 15s infinite;
+  animation: fade-in-out 15s infinite;
+}
+
+#frase-1 {
+	opacity: 1;
+
+	-webkit-animation-delay: 0s;
+	-moz-animation-delay: 0s;
+	-o-animation-delay: 0s;
+	animation-delay: 0;
+}
+
+#frase-2 {
+	opacity: 0;
+
+	-webkit-animation-delay: 5s;
+	-moz-animation-delay: 5s;
+	-o-animation-delay: 5s;
+	animation-delay: 5s;
+}
+
+#frase-3 {
+	opacity: 0;
+
+	-webkit-animation-delay: 10s;
+	-moz-animation-delay: 10s;
+	-o-animation-delay: 10s;
+	animation-delay: 10s;
+}
+
+
+@-webkit-keyframes fade-in-out {
+  0%, 33%, 100%   { opacity: 0; }
+  16% { opacity: 1; }
+}
+
+@-moz-keyframes fade-in-out {
+  0%, 33%, 100%  { opacity: 0; }
+  16% { opacity: 1; }
+}
+
+@-o-keyframes fade-in-out {
+  0%, 33%, 100%   { opacity: 0; }
+  16% { opacity: 1; }
+}
+
+@keyframes fade-in-out {
+	0%, 33%, 100% { opacity: 0; }
+	16% { opacity: 1; }
+}
+
+/* SECCION CONTACTO */
+
+#contacto{
+  position: absolute;
+}
+
+/*LISTA DE SERVICIOS*/
+
+ ul.icon {
+  list-style: none;
+  padding: 0;
+}
+
+.done{
+  padding-left: 1.3em;
+}
+
+ul.icon li:before{
+  font-family: "Material Icons";
+  content: "\E876";
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
+  color: #00c853!important;
+}
+
+.material-icons.md-56 { font-size: 56px; }
