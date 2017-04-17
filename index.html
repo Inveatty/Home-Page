@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/materialdesignicons.min.css" media="all" type="text/css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
@@ -19,8 +20,8 @@
              <a href="#" class="brand-logo">Inveatty</a>
              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
              <ul id="nav-mobile" class="right hide-on-med-and-down">
-                 <li><a href="#">Inicio</a></li>
-                 <li><a href="#">Servicios</a></li>
+                 <li><a href="#main_full">Inicio</a></li>
+                 <li><a href="#we_do">Servicios</a></li>
                  <li><a href="#">Nosotros</a></li>
                  <li><a href="#">Paquetes</a></li>
                  <li><a href="#">Cotacto</a></li>
@@ -37,24 +38,27 @@
     </nav>
 
     <section>
-      <div id="full" class="section no-pad-bot deep-purple darken-1" id="index-banner">
+      <div id="main_full" class="section no-pad-bot deep-purple darken-1" id="index-banner">
           <div class="container">
             <div class="container">
 
             </div>
               <br><br>
-              <div id="reclamo" class="row">
+              <div class="row">
                 <div class="col s6"></div>
                 <div class="col s6">
-                  <section><h1 id="frase-1" class="frase white-text">Sueñalo, analizalo, realizalo</h1></section>
-                  <section><h1 id="frase-2" class="frase white-text">Te ayudamos a realizarlo, y ejecutarlo</h1></section>
-                  <section><h1 id="frase-3" class="frase white-text">... Finalizacion del mensaje para atrae atencion</h1></section>
-                  <!--<h3 class="header white-text left-align ">NOSOTROS TRAEMOS</h3>
-                  <h3 class="header white-text left-align ">EMOCION Y VALOR</h3>
-                  <h3 class="header white-text left-align ">A TU PRODUCTO</h3>
-                  <div class="row left-align">
-                      <p class="header col s12 light">Compatible con Android, IOS y Navegadores modernos</p>
-                    </div>-->
+                  <div id="reclamo">
+                    <section><h1 id="frase-1" class="frase white-text">Sueñalo, analizalo, realizalo</h1></section>
+                    <section><h1 id="frase-2" class="frase white-text">Te ayudamos a realizarlo, y ejecutarlo</h1></section>
+                    <section><h1 id="frase-3" class="frase white-text">... Finalizacion del mensaje para atrae atencion</h1></section>
+                    <!--<h3 class="header white-text left-align ">NOSOTROS TRAEMOS</h3>
+                    <h3 class="header white-text left-align ">EMOCION Y VALOR</h3>
+                    <h3 class="header white-text left-align ">A TU PRODUCTO</h3>
+                    <div class="row left-align">
+                        <p class="header col s12 light">Compatible con Android, IOS y Navegadores modernos</p>
+                      </div>-->
+
+                  </div>
                   </br>
                   <div id="contacto">
                       <a href="#" id="download-button" class="lef-align btn-large waves-effect waves-light pink accent-2">Contactanos</a>
@@ -67,70 +71,72 @@
       </div>
     </section>
 
-    <section id="we_do">
-      <div class="container white">
-        <div class="row">
-          <div class="col s6">
-            <span class="flow-text">Aprende mas de nosotros</span>
-            <h2 class="center">¿Que hacemos?</h2>
+    <section>
+      <div id="we_do" class="scrollspy">
+        <div class="white">
+          <div class="row">
+            <div class="col s6">
+            <!--<span class="flow-text">Aprende mas de nosotros</span>-->
+              <h2 class="center">¿Que hacemos?</h2>
 
+            </div>
+            <div class="col s6">
+              <h2>¿Que hacemos?</h2>
+              <div class="section">
+                <div class="row services_title">
+                  <div class="col s2">
+                    <i class="material-icons md-56">mouse</i>
+                  </div>
+                  <div class="col s8">
+                    <h5 class="animated infinite bounce"> Desarrollo Web</h5>
+                  </div>
+                </div>
+               <div class="container lists">
+                 <ul id="staggered" class="icon">
+                   <li class="done">Proyectos editoriales, transaccionales y a la medida</li>
+                   <li class="done">Mantenimiento de proyectos</li>
+                   <li class="done">Desarrollo en Python y PHP</li>
+                 </ul>
+               </div>
+             </div>
+             <div class="divider"></div>
+             <div class="section">
+               <div class="row services_title">
+                 <div class="col s2">
+                    <i class="material-icons md-56">people</i>
+                 </div>
+                 <div class="col s8">
+                   <h5> Social Media</h5>
+                 </div>
+               </div>
+               <div class="container lists">
+                 <ul class="icon" id="staggered2">
+                   <li class="done">Gestion de Redes Sociales</li>
+                   <li class="done">Creacion de Contenido</li>
+                   <li class="done">Creacion y Gestion de camapañas</li>
+                 </ul>
+               </div>
+             </div>
+             <div class="divider"></div>
+             <div class="section">
+               <div class="row services_title">
+                 <div class="col s2">
+                   <i class="material-icons md-56">view_compact</i>
+                 </div>
+                 <div class="col s8">
+                   <h5> UI y UX</h5>
+                 </div>
+               </div>
+               <div class="container lists">
+                 <ul class="icon" id="staggered3">
+                   <li class="done">Asesoria de diseño UX</li>
+                   <li class="done">Diseño UX</li>
+                   <li class="done">Refactoriar a UX</li>
+                 </ul>
+               </div>
+             </div>
           </div>
-          <div class="col s6">
-            <div class="divider"></div>
-            <div class="section">
-              <div class="row">
-                <div class="col s2">
-                  <i class="material-icons md-56">mouse</i>
-                </div>
-                <div class="col s8">
-                  <h5> Desarrollo Web</h5>
-                </div>
-              </div>
-             <div class="container lists">
-               <ul class="icon">
-                 <li class="done">ssss</li>
-                 <li class="done">ddd</li>
-                 <li class="done">ddddd</li>
-               </ul>
-             </div>
-           </div>
-           <div class="divider"></div>
-           <div class="section">
-             <div class="row">
-               <div class="col s2">
-                  <i class="material-icons md-56">people</i>
-               </div>
-               <div class="col s8">
-                 <h5> Social Media</h5>
-               </div>
-             </div>
-             <div class="container lists">
-               <ul class="icon">
-                 <li class="done">ssss</li>
-                 <li class="done">ddd</li>
-                 <li class="done">ddddd</li>
-               </ul>
-             </div>
-           </div>
-           <div class="divider"></div>
-           <div class="section">
-             <div class="row">
-               <div class="col s2">
-                 <i class="material-icons md-56">view_compact</i>
-               </div>
-               <div class="col s8">
-                 <h5> UI y UX</h5>
-               </div>
-             </div>
-             <div class="container lists">
-               <ul class="icon">
-                 <li class="done">ssss</li>
-                 <li class="done">ddd</li>
-                 <li class="done">ddddd</li>
-               </ul>
-             </div>
-           </div>
-        </div>
+          </div>
         </div>
       </div>
     </section>
